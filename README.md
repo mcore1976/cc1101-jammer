@@ -6,6 +6,7 @@ Frames are transmitted on multiple channels with frequencyu hopping.
 The code has predefined settings for following base ISM  frequencies : 315 MHz, 433 MHz, 868 MHz..
 
 Used Arduino Pro Micro board ( ATMEGA32U4 chip ) must support 3.3Volt VCC and 3.3V TTL logic because this is required by CC1101 board, otherwise you will fry CC1101 chip.
+Please follow this guide to setup your Arduino environment for Arduino Pro Micro board : https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide/all
 
 Connections to be made :
 
