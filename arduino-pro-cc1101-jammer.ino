@@ -26,10 +26,6 @@
 
 #define F_CPU 8000000UL
 
-// for serial port communication lowest error rates for 8MHZ CPU clock are 38400, 9600, 2400..
-#define BAUDRATE 9600       //The baudrate that we want to use
-#define BAUD_PRESCALLER (((F_CPU / (BAUDRATE * 16UL))) - 1)    //The formula that does all the required maths
-
 
 /**
  * SPI pins
