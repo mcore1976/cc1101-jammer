@@ -9,7 +9,7 @@ Used Arduino Pro Micro board ( ATMEGA32U4 chip ) must support 3.3Volt VCC and 3.
 
 Connections to be made :
 
-- ARDUINO PRO MICRO 3.3V / 8MHz <-> CC1101 BOARD
+ARDUINO PRO MICRO 3.3V / 8MHz <-> CC1101 BOARD
 - DIGITAL PIN 3  ( PD0 / INT0 ) <-> CC1101 GDO0
 - DIGITAL PIN 9  ( PB5 )        <-> CC1101 GDO2
 - DIGITAL PIN 10 ( PB6 )        <-> CC1101 CSN / CS / SS
