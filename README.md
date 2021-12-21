@@ -3,7 +3,7 @@ Example of using CC1101 module with Arduino Pro Micro ( ATMEGA32U4, 3.3V / 8MHz 
 This device allows for programmable jamming of sub 1GHz frequency with 10mW signal and selected modulation type and payload.
 In this example pseudo random payloads (1024 bytes) are used to feed CC1101 frames (64 bytes long)  that will be send on particular frequency ( white noise ).
 Frames are transmitted on multiple channels with frequency hopping or you may configure the code to send only on single frequency for better jamming.
-The code has predefined settings for following base ISM  frequencies : 315 MHz, 433 MHz, 868 MHz, 915 MHz.. And also allows to put any custom transmission frequency friom 0-1000MHz range.
+The code has predefined settings for following base ISM  frequencies : 315 MHz, 433 MHz, 868 MHz, 915 MHz.. The program also allows to select custom transmission frequency from 0-1000MHz range.
 Please take into account that jamming even ISM frequency may be illegal in your country !
 
 Used Arduino Pro Micro board ( ATMEGA32U4 chip ) must support 3.3Volt VCC and 3.3V TTL logic because this is required by CC1101 board, otherwise you will fry CC1101 chip.
