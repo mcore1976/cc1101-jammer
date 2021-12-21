@@ -23,3 +23,5 @@ ARDUINO PRO MICRO 3.3V / 8MHz <-> CC1101 BOARD
 Please use SMARTRFTM studio to fine tune CC1101 registers to particular : base frequency, modulation, output power etc..
 https://www.ti.com/tool/SMARTRFTM-STUDIO
 
+
+The video showing how the jammer work is available here : https://www.youtube.com/watch?v=vZcGP-O2GvQ
