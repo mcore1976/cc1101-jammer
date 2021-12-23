@@ -9,6 +9,8 @@
  * 
  * (c) Adam Loboda 2021
  * 
+ * This is ARDUINO PRO MICRO version (ATMEGA32U4)
+ *
  */
 
 
