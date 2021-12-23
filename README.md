@@ -20,6 +20,20 @@ ARDUINO PRO MICRO 3.3V / 8MHz <-> CC1101 BOARD
 - DIGITAL PIN 14 ( PB3 / MISO ) <-> CC1101 MISO
 - DIGITAL PIN 15 ( PB1 / SCK )  <-> CC1101 SCLK / CLK 
 
+---
+
+OPTIONALLY you may use ARDUINO PRO MINI ( 3.3V / 8 MHz version )
+
+ARDUINO PRO MINI 3.3V / 8MHz <-> CC1101 BOARD
+- DIGITAL PIN 2  ( PD2 / INT0 ) <-> CC1101 GDO0
+- DIGITAL PIN 9  ( PB1 )        <-> CC1101 GDO2
+- DIGITAL PIN 10 ( PB2 )        <-> CC1101 CSN / CS / SS
+- DIGITAL PIN 11 ( PB3 / MOSI ) <-> CC1101 MOSI
+- DIGITAL PIN 12 ( PB4 / MISO ) <-> CC1101 MISO
+- DIGITAL PIN 13 ( PB5 / SCK )  <-> CC1101 SCLK / CLK 
+
+---
+
 Please use SMARTRFTM studio to fine tune CC1101 registers to particular : base frequency, modulation, output power etc..
 https://www.ti.com/tool/SMARTRFTM-STUDIO
 
