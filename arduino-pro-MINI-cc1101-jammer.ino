@@ -555,7 +555,7 @@ while ((PIND >> 2) & 1);
 };
 
 /*
-  Wait until SPI MISO line goes low - PORT B3
+  Wait until SPI MISO line goes low - PORT B4
  */
 void wait_Miso(void)  
 {
@@ -1223,7 +1223,7 @@ uint8_t marcState;
     // CC1101 INITIALIZATION
     radio_init();
     
-    // setup interrpupts for GCO0 connected to INT0
+    // setup interrpupts for GCO0 connected to INT0 - PD2 PIN , D2
     //
     DDRD &= ~(1 << DDD2);     // Clear the PD2 pin
     // PD2 (PCINT0 pin) is now an input
