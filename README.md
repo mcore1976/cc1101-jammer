@@ -3,7 +3,8 @@ Example of using CC1101 module with Arduino Pro Micro ( ATMEGA32U4, 3.3V / 8MHz 
 This device allows for programmable jamming of sub 1GHz frequency with 10mW signal of selected modulation type and payload.
 In this example pseudo random payloads (1024 bytes) are used to feed CC1101 frames (64 bytes long)  that will be send on particular frequency ( white noise ).
 Frames are transmitted on multiple channels with frequency hopping or you may configure the code to send only on single frequency for better jamming.
-The code has predefined settings for following base ISM  frequencies : 315 MHz, 433 MHz, 868 MHz, 915 MHz.. The program also allows to select custom transmission frequency within 300-348 MHz, 387-464 MHz and 779-928 MHz ranges.
+The code has predefined settings for following base ISM  frequencies : 315 MHz, 433 MHz, 868 MHz, 915 MHz.. The program also allows to select custom transmission frequency within 300-348 MHz, 387-464 MHz and 779-928 MHz ranges. By adding USB serial port handling you may extend this software to support similar features to Yardstick One.
+
 Please take into account that jamming even ISM frequency may be illegal in your country !
 
 ---
