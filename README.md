@@ -1,4 +1,4 @@
-Example of using CC1101 module with Arduino Pro Micro ( ATMEGA32U4, 3.3V / 8MHz version ) for radio jamming. Alternatively Arduino Pro Mini (3.3V / 8MHz) may be used.
+Example of using CC1101 module with Arduino Pro Micro ( ATMEGA32U4, 3.3V / 8MHz version ) for radio jamming. Alternatively Arduino Pro Mini (ATMEGA328P 3.3V / 8MHz) may be used.
 
 This device allows for programmable jamming of sub 1GHz frequency with 10mW signal of selected modulation type and payload.
 In this example pseudo random payloads (1024 bytes) are used to feed CC1101 frames (64 bytes long)  that will be send on particular frequency ( white noise ).
