@@ -25,7 +25,7 @@ ARDUINO PRO MICRO 3.3V / 8MHz <-> CC1101 BOARD
 
 ---
 
-OPTIONALLY you may use ARDUINO PRO MINI ( 3.3V / 8 MHz version ). In that case you would have to use additional FTDI232 adapter to be able to program ARDUINO PRO MINI from Arduino IDE environment ( connected to TXD, RXD, GND pins )
+OPTIONALLY you may use ARDUINO PRO MINI (ATMEGA328P  3.3V / 8 MHz version ). In that case you would have to use additional FTDI232 adapter to be able to program ARDUINO PRO MINI from Arduino IDE environment ( connected to TXD, RXD, GND pins )
 
 ARDUINO PRO MINI 3.3V / 8MHz <-> CC1101 BOARD
 - DIGITAL PIN 2  ( PD2 / INT0 ) <-> CC1101 GDO0
