@@ -7,7 +7,7 @@
 // Please download ZIP from 
 // https://github.com/LSatan/SmartRC-CC1101-Driver-Lib
 // and attach it as ZIP library for Arduino
-// This code will for only with Arduino Pro Micro
+// This code will work with Arduino Pro Micro
 //
 
 #include <avr/io.h>
@@ -86,6 +86,9 @@ const uint8_t  randomized[] PROGMEM =
 
 void setup() {
 
+     // Following section enables SmartRC CC1101 library 
+     // to work with Arduino Pro Micro
+     // if using different board, please remove it
      // defining PINs set for Arduino Pro Micro setup
      byte sck = 15;   
      byte miso = 14;
@@ -137,6 +140,8 @@ void setup() {
     // just for debugging Serial may be omitted
     Serial.println("Tx Mode");
 }
+
+
 
 void loop() {
 
