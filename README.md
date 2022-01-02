@@ -41,4 +41,4 @@ ARDUINO PRO MINI 3.3V / 8MHz <-> CC1101 BOARD
 
 ---
 
-The video showing how the jammer work is available here : https://www.youtube.com/watch?v=vZcGP-O2GvQ
+The video showing how the jammer works is available here : https://www.youtube.com/watch?v=vZcGP-O2GvQ
