@@ -3,7 +3,8 @@ Example of using CC1101 module with Arduino Pro Micro ( ATMEGA32U4, 3.3V / 8MHz 
 This device allows for programmable jamming of sub 1GHz frequency with 10mW signal of selected modulation type and payload.
 In this example pseudo random payloads (1024 bytes) are used to feed CC1101 frames (64 bytes long)  that will be send on particular frequency ( white noise ).
 Frames are transmitted on multiple channels with frequency hopping or you may configure the code to send only on single frequency for better jamming.
-The code has predefined settings for following base ISM  frequencies : 315 MHz, 433 MHz, 868 MHz, 915 MHz.. The program also allows to select custom transmission frequency within 300-348 MHz, 387-464 MHz and 779-928 MHz ranges. By adding USB serial port handling you may extend this software to support similar features to Yardstick One.
+The code has predefined settings for following base ISM  frequencies : 315 MHz, 433 MHz, 868 MHz, 915 MHz.. The program also allows to select custom transmission frequency within 300-348 MHz, 387-464 MHz and 779-928 MHz ranges. Please use SMARTRFTM studio to fine tune CC1101 registers to your needs for base frequency, modulation, output power etc.. https://www.ti.com/tool/SMARTRFTM-STUDIO  
+By adding USB serial port handling you may extend this software to support similar features to Yardstick One.
 
 Attached 'version 2' of jammer code uses SmartRC library (modified Electrohouse library by Little_S@tan) which allows to customize ALL transmission parameters in human readable format without using SmartRF studio from TI. To use this version of INO script , ZIP library from following github link https://github.com/LSatan/SmartRC-CC1101-Driver-Lib  has to be attached to the script in Arduino IDE.
 
@@ -39,9 +40,5 @@ ARDUINO PRO MINI 3.3V / 8MHz <-> CC1101 BOARD
 - DIGITAL PIN 13 ( PB5 / SCK )  <-> CC1101 SCLK / CLK 
 
 ---
-
-Please use SMARTRFTM studio to fine tune CC1101 registers to particular : base frequency, modulation, output power etc..
-https://www.ti.com/tool/SMARTRFTM-STUDIO
-
 
 The video showing how the jammer work is available here : https://www.youtube.com/watch?v=vZcGP-O2GvQ
