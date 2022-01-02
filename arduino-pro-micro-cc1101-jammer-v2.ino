@@ -7,7 +7,7 @@
 // Please download ZIP from 
 // https://github.com/LSatan/SmartRC-CC1101-Driver-Lib
 // and attach it as ZIP library for Arduino
-// This code will work with Arduino Pro Micro
+// This code will work with Arduino Pro Micro 3.3V 8MHz
 //
 
 #include <avr/io.h>
@@ -98,16 +98,6 @@ void setup() {
      // initializing library with custom pins selected
      ELECHOUSE_cc1101.setSpiPin(sck, miso, mosi, ss);
 
-
-    // this Serial interface part is just for debugging and may be omitted
-    Serial.begin(9600);
-    if (ELECHOUSE_cc1101.getCC1101()){      // Check the CC1101 Spi connection.
-    Serial.println("Connection OK");
-    }else{
-    Serial.println("Connection Error");
-    }
-
-
     // Main part to tune CC1101 with proper frequency, modulation and encoding    
     ELECHOUSE_cc1101.Init();                // must be set to initialize the cc1101!
     ELECHOUSE_cc1101.setGDO0(gdo0);         // set lib internal gdo pin (gdo0). Gdo2 not use for this example.
@@ -137,8 +127,6 @@ void setup() {
     ELECHOUSE_cc1101.setPQT(0);             // Preamble quality estimator threshold. The preamble quality estimator increases an internal counter by one each time a bit is received that is different from the previous bit, and decreases the counter by 8 each time a bit is received that is the same as the last bit. A threshold of 4∙PQT for this counter is used to gate sync word detection. When PQT=0 a sync word is always accepted.
     ELECHOUSE_cc1101.setAppendStatus(0);    // When enabled, two status bytes will be appended to the payload of the packet. The status bytes contain RSSI and LQI values, as well as CRC OK.
 
-    // just for debugging Serial may be omitted
-    Serial.println("Tx Mode");
 }
 
 
